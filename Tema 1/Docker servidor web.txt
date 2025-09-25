@@ -1,0 +1,5 @@
+#Crear Apache
+docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache
+
+#Crear Apache con PHP
+docker run -dit --name my-running-script -v "$PWD":/var/www/html -p 8081:80 php:8.4-rc-apache
