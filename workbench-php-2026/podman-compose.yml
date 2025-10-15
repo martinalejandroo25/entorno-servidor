@@ -12,6 +12,8 @@ services:
       - ./nginx.php-fpm.conf:/etc/nginx/nginx.conf:ro
     links:
       - php-fpm
+    depends_on:
+      - php-fpm
 
   # Configuración de php
   php-fpm:
